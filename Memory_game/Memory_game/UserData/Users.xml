@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfUser xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <User>
+    <Name>Cosmin</Name>
+    <Image>D:/An_2_sem2/MVP/Memory_game/Memory_game/UserData/Images/image0.png</Image>
+    <NumberOfGames>14</NumberOfGames>
+    <NumberOfWonGames>6</NumberOfWonGames>
+  </User>
+  <User>
+    <Name>Roxana</Name>
+    <Image>D:/An_2_sem2/MVP/Memory_game/Memory_game/UserData/Images/image2.png</Image>
+    <NumberOfGames>0</NumberOfGames>
+    <NumberOfWonGames>0</NumberOfWonGames>
+  </User>
+  <User>
+    <Name>Marcel</Name>
+    <Image>D:/An_2_sem2/MVP/Memory_game/Memory_game/UserData/Images/image1.png</Image>
+    <NumberOfGames>2</NumberOfGames>
+    <NumberOfWonGames>1</NumberOfWonGames>
+  </User>
+  <User>
+    <Name>Maria</Name>
+    <Image>D:/An_2_sem2/MVP/Memory_game/Memory_game/UserData/Images/image3.png</Image>
+    <NumberOfGames>12</NumberOfGames>
+    <NumberOfWonGames>1</NumberOfWonGames>
+  </User>
+  <User>
+    <Name>Doru</Name>
+    <Image>D:/An_2_sem2/MVP/Memory_game/Memory_game/UserData/Images/image0.png</Image>
+    <NumberOfGames>5</NumberOfGames>
+    <NumberOfWonGames>4</NumberOfWonGames>
+  </User>
+</ArrayOfUser>

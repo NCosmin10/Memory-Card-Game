@@ -1,0 +1,39 @@
+﻿<Window x:Class="Memory_game.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Memory_game"
+        mc:Ignorable="d"
+        Title="GameWindow" Height="550" Width="550"
+        Closing="Window_Closing">
+
+    <Window.DataContext>
+        <local:Game/>
+    </Window.DataContext>
+
+    <Grid>
+        <ItemsControl ItemsSource="{Binding cards}" Margin="0,10,191,35.8" Name="Board" HorizontalAlignment="Right" Width="326">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Button Click="cardButton_Click" x:Name="cardButton" Width="Auto" Height="Auto" >
+                        <Button.Content>
+                            <Image Source="D://An_2_sem2//MVP/Memory_game//Memory_game//Photos//Basic_Back.jpg" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                        </Button.Content>
+                    </Button>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <Image Name="imgPlayer" HorizontalAlignment="Left" Height="132" Margin="380,25,0,0" VerticalAlignment="Top" Width="128"/>
+        <Label Name="labelPlayerName" Content="Player name" HorizontalAlignment="Left" Margin="380,175,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.185,-0.125" Height="26" Width="128"/>
+        <Label Name="labelRound" Content="Round" HorizontalAlignment="Left" Margin="380,201,0,0" VerticalAlignment="Top" Width="128"/>
+        <Label Content="Remaining time:" HorizontalAlignment="Left" Margin="380,227,0,0" VerticalAlignment="Top" Width="96"/>
+        <Label Name="RemainingTime" Content="Time" HorizontalAlignment="Left" Margin="476,227,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
